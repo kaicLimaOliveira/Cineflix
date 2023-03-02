@@ -20,6 +20,20 @@ body {
     width: 100%;
 }
 
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+    background: #f1f1f1;        /* color of the tracking area */
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #e0e0e0;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 2px solid #d1d1d1;  /* creates padding around scroll thumb */
+}
+
 h1,
 h3,
 h2,
@@ -386,6 +400,7 @@ a {
     color: white;
     transition: color 0.3s;
 }
+
 
 .carousel-btn {
     display: flex;
