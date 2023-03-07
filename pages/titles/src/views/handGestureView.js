@@ -84,6 +84,7 @@ export default class HandGestureView {
     if (finger !== "indexFinger") return
     const tip = points.find(item => item.name === "index_finger_tip")
     const element = document.elementFromPoint(tip.x, tip.y)
+
     if (!element) return;
     const fn = () => this.#styler.toggleStyle(element, ':hover')
     fn()
