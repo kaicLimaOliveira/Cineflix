@@ -58,7 +58,7 @@ export default class HandGestureView {
       const endAngle = 2 * Math.PI
 
       this.#canvasContext.arc(newX, newY, radius, startAngle, endAngle)
-      this.canvasContext.fill()
+      this.#canvasContext.fill()
     }
   }
 
