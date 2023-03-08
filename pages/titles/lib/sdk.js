@@ -3,74 +3,103 @@ const DEFAULT_CAROUSELS = document.getElementsByClassName("default-carousel")
 
 let cards = [
   {
-    background:
-      "//external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fmoviefail.com%2Fwp-content%2Fuploads%2F2014%2F11%2Finterstellar1.jpeg&f=1&nofb=1",
-    display_background:
-      "//external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fhdqwalls.com%2Fdownload%2Finterstellar-gargantua-u4-1920x1080.jpg&f=1&nofb=1",
+    background: "https://i.pinimg.com/564x/6b/be/7e/6bbe7e8dc64af7b3fdd30be86039e33f.jpg",
+    display_background: "https://i.pinimg.com/564x/6b/be/7e/6bbe7e8dc64af7b3fdd30be86039e33f.jpg",
+    title: "Batman: O Cavaleiro das Trevas",
+    description: "Com a ajuda de Jim Gordon e Harvey Dent, Batman tem mantido a ordem na cidade de Gotham. Mas um jovem e anárquico criminoso conhecido como Coringa ganha força e decide instaurar um verdadeiro caos na cidade. O justiceiro será testado psicologicamente e fisicamente como nunca fora antes em um confronto bastante pessoal.",
+    time: "2h 32m",
+    videoUrl: "https://youtu.be/M-Wv0fTr86I",
+  },
+  {
+    background: "https://i.pinimg.com/originals/01/37/7f/01377fc99e7bbf9015e8e0f78e99329a.jpg",
+    display_background: "https://i.pinimg.com/originals/01/37/7f/01377fc99e7bbf9015e8e0f78e99329a.jpg",
+    title: "Batman: O Cavaleiro das Trevas Ressurge",
+    description: "Após ser culpado pela morte de Harvey Dent e passar de herói a vilão, Batman desaparece. As coisas mudam com a chegada de uma ladra misteriosa, a Mulher-Gato, e Bane, um terrorista mascarado, que fazem Batman abandonar seu exílio forçado.",
+    time: "2h 45m",
+    videoUrl: "https://youtu.be/1it3Eqn2zNQ",
+  },
+  {
+    background: "https://i.pinimg.com/originals/1f/46/22/1f46220855559aad3de84a138f92c6c5.jpg",
+    display_background: "https://i.pinimg.com/originals/1f/46/22/1f46220855559aad3de84a138f92c6c5.jpg",
+    title: "Harry Potter e o Prisioneiro de Azkaban",
+    description: "É o início do terceiro ano na escola de bruxaria Hogwarts. Harry, Ron e Hermione têm muito o que aprender. Mas uma ameaça ronda a escola e ela se chama Sirius Black. Após doze anos encarcerado na prisão de Azkaban, ele consegue escapar e volta para vingar seu mestre, Lord Voldemort.",
+    time: "2h 22m",
+    videoUrl: "https://youtu.be/NQfXOPHrmAI",
+  },
+  {
+    background: "https://i.pinimg.com/originals/e3/ae/0b/e3ae0b207ff0b7c7c190f881a4ae0143.jpg",
+    display_background: "https://i.pinimg.com/originals/e3/ae/0b/e3ae0b207ff0b7c7c190f881a4ae0143.jpg",
+    title: "Homem-Aranha: Sem Volta para Casa",
+    description: "Peter Parker tem a sua identidade secreta revelada e pede ajuda ao Doutor Estranho. Quando um feitiço para reverter o evento não sai como o esperado, o Homem-Aranha e seu companheiro dos Vingadores precisam enfrentar inimigos de todo o multiverso.",
+    time: "2h 28m",
+    videoUrl: "https://youtu.be/m-YLc6HvcZs",
+  },
+  {
+    background: "//external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fmoviefail.com%2Fwp-content%2Fuploads%2F2014%2F11%2Finterstellar1.jpeg&f=1&nofb=1",
+    display_background: "//external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fhdqwalls.com%2Fdownload%2Finterstellar-gargantua-u4-1920x1080.jpg&f=1&nofb=1",
     title: "Interstellar",
-    description:
-      "As reservas naturais da Terra estão chegando ao fim e um grupo de astronautas recebe a missão de verificar possíveis planetas para receberem a população mundial, possibilitando a continuação da espécie. Cooper é chamado para liderar o grupo e aceita a missão sabendo que pode nunca mais ver os filhos. Ao lado de Brand, Jenkins e Doyle, ele seguirá em busca de um novo lar."
+    description: "As reservas naturais da Terra estão chegando ao fim e um grupo de astronautas recebe a missão de verificar possíveis planetas para receberem a população mundial, possibilitando a continuação da espécie. Cooper é chamado para liderar o grupo e aceita a missão sabendo que pode nunca mais ver os filhos. Ao lado de Brand, Jenkins e Doyle, ele seguirá em busca de um novo lar.",
+    time: "2h 49m",
+    videoUrl: "https://youtu.be/LpdTsygor0A",
   },
   {
     background: "https://images.unsplash.com/photo-1482164565953-04b62dcac1cd?ixlib=rb-4.0.3&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb",
-    display_background:
-      "//external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages2.alphacoders.com%2F845%2F84502.jpg&f=1&nofb=1",
+    display_background: "//external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages2.alphacoders.com%2F845%2F84502.jpg&f=1&nofb=1",
     title: "Inception",
-    description:
-      "Watch this incredible film made by some incredible people!"
+    description: "Dom Cobb é um ladrão com a rara habilidade de roubar segredos do inconsciente, obtidos durante o estado de sono. Impedido de retornar para sua família, ele recebe a oportunidade de se redimir ao realizar uma tarefa aparentemente impossível: plantar uma ideia na mente do herdeiro de um império. Para realizar o crime perfeito, ele conta com a ajuda do parceiro Arthur, o discreto Eames e a arquiteta de sonhos Ariadne. Juntos, eles correm para que o inimigo não antecipe seus passos.",
+    time: "2h 28m",
+    videoUrl: "https://youtu.be/NAYkdl2xYEE",
   },
   {
-    background:
-      "//external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpapersafari.com%2F41%2F1%2Fhj197K.jpg&f=1&nofb=1",
-    display_background:
-      "//external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages7.alphacoders.com%2F990%2F990610.jpg&f=1&nofb=1",
+    background: "//external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpapersafari.com%2F41%2F1%2Fhj197K.jpg&f=1&nofb=1",
+    display_background: "//external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages7.alphacoders.com%2F990%2F990610.jpg&f=1&nofb=1",
     title: "Avengers: Endgame",
-    description:
-      "Watch this incredible film made by some incredible people!"
+    description: "Após Thanos eliminar metade das criaturas vivas, os Vingadores têm de lidar com a perda de amigos e entes queridos. Com Tony Stark vagando perdido no espaço sem água e comida, Steve Rogers e Natasha Romanov lideram a resistência contra o titã louco.",
+    time: "3h 2m",
+    videoUrl: "https://youtu.be/g6ng8iy-l0U",
   },
   {
-    background:
-      "//external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.wallpapersden.com%2Fimage%2Fdownload%2Fjoker-2019-movie_66632_1920x1080.jpg&f=1&nofb=1",
-    display_background:
-      "//external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.wallpapersden.com%2Fimage%2Fdownload%2Fjoker-stair-dance_68124_1920x1080.jpg&f=1&nofb=1",
+    background: "//external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.wallpapersden.com%2Fimage%2Fdownload%2Fjoker-2019-movie_66632_1920x1080.jpg&f=1&nofb=1",
+    display_background: "//external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.wallpapersden.com%2Fimage%2Fdownload%2Fjoker-stair-dance_68124_1920x1080.jpg&f=1&nofb=1",
     title: "Joker",
-    description:
-      "Watch this incredible film made by some incredible people!"
+    description: "Isolado, intimidado e desconsiderado pela sociedade, o fracassado comediante Arthur Fleck inicia seu caminho como uma mente criminosa após assassinar três homens em pleno metrô. Sua ação inicia um movimento popular contra a elite de Gotham City, da qual Thomas Wayne é seu maior representante.",
+    time: "2h 2m",
+    videoUrl: "https://youtu.be/KUlIaSTYbuo",
   },
   {
-    background:
-      "//external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.U2iFUz9mivZeH-h48O5wtwHaEK%26pid%3DApi&f=1",
+    background: "//external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.U2iFUz9mivZeH-h48O5wtwHaEK%26pid%3DApi&f=1",
     title: "1917",
-    description:
-      "Watch this incredible film made by some incredible people!"
+    description: "Na Primeira Guerra Mundial, dois soldados britânicos recebem ordens aparentemente impossíveis de cumprir. Em uma corrida contra o tempo, eles precisam atravessar o território inimigo e entregar uma mensagem que pode salvar 1.600 de seus companheiros.",
+    time: "1h 59m",
+    videoUrl: "https://youtu.be/_wcbqMUNBF4",
   },
   {
-    background:
-      "//external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapershome.com%2Fimages%2Fpages%2Fpic_h%2F22685.jpg&f=1&nofb=1",
+    background: "//external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapershome.com%2Fimages%2Fpages%2Fpic_h%2F22685.jpg&f=1&nofb=1",
     title: "TENET",
-    description:
-      "Watch this incredible film made by some incredible people!"
+    description: "Um agente secreto embarca em uma missão perigosa para evitar o início da Terceira Guerra Mundial.",
+    time: "2h 30m",
+    videoUrl: "https://youtu.be/VFCYph0eSD4",
   },
   {
-    background:
-      "//external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fgetwallpapers.com%2Fwallpaper%2Ffull%2F9%2F6%2F8%2F126147.jpg&f=1&nofb=1",
+    background: "//external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fgetwallpapers.com%2Fwallpaper%2Ffull%2F9%2F6%2F8%2F126147.jpg&f=1&nofb=1",
     title: "Star Wars: A New Hope",
-    description:
-      "Watch this incredible film made by some incredible people!"
+    description: "A princesa Leia é mantida refém pelas forças imperiais comandadas por Darth Vader. Luke Skywalker e o capitão Han Solo precisam libertá-la e restaurar a liberdade e a justiça na galáxia.",
+    time: "2h 1m",
+    videoUrl: "https://youtu.be/TlLb07C30To",
   },
   {
-    background:
-      "//external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FrPpxrz8o0svAPCLucjsEdMXoDfX.jpg&f=1&nofb=1",
+    background: "//external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FrPpxrz8o0svAPCLucjsEdMXoDfX.jpg&f=1&nofb=1",
     title: "Venom",
-    description:
-      "Watch this incredible film made by some incredible people!"
+    description: "O jornalista investigativo Eddie Brock é possuído por uma forma alienígena simbionte, ganhando poderes-sobre humanos. Perverso, sombrio e alimentado pela raiva, Venom tenta controlar os novos e perigosos poderes inebriantes de Eddie.",
+    time: "1h 52m",
+    videoUrl: "https://youtu.be/hs9isxvGGy8",
   },
   {
-    background:
-      "//external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapertag.com%2Fwallpaper%2Ffull%2F2%2F6%2F8%2F123320-lord-of-the-rings-background-1920x1080-picture.jpg&f=1&nofb=1",
+    background: "//external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapertag.com%2Fwallpaper%2Ffull%2F2%2F6%2F8%2F123320-lord-of-the-rings-background-1920x1080-picture.jpg&f=1&nofb=1",
     title: "Lord of the Rings",
-    description:
-      "Watch this incredible film made by some incredible people!"
+    description: "Em uma terra fantástica e única, um hobbit recebe de presente de seu tio um anel mágico e maligno que precisa ser destruído antes que caia nas mãos do mal. Para isso, o hobbit Frodo tem um caminho árduo pela frente, onde encontra perigo, medo e seres bizarros. Ao seu lado para o cumprimento desta jornada, ele aos poucos pode contar com outros hobbits, um elfo, um anão, dois humanos e um mago, totalizando nove seres que formam a Sociedade do Anel.",
+    time: "2h 58m",
+    videoUrl: "https://youtu.be/z6QpBGprhcw",
   }
 ]
 
@@ -261,7 +290,7 @@ const AddDefaultCards = (carousels = DEFAULT_CAROUSELS) => {
       let title = document.createElement("h4")
       title.innerText = chosen_card.title
       let description = document.createElement("p")
-      description.innerText = "1h 22min"
+      description.innerText = chosen_card.time
 
       let button_container = document.createElement("div")
       button_container.classList.add("button-container")
@@ -272,7 +301,7 @@ const AddDefaultCards = (carousels = DEFAULT_CAROUSELS) => {
 </svg>`
       button1.classList.add("watch")
 
-      button1.addEventListener('click', function () { PlayVideo("00") })
+      button1.addEventListener('click', function () { PlayVideo(chosen_card.videoUrl) })
 
       let button2 = document.createElement("div")
       button2.innerHTML = `<svg fill="currentColor" viewBox="0 0 16 16">
@@ -345,20 +374,22 @@ const AddDefaultCards = (carousels = DEFAULT_CAROUSELS) => {
           let btn_selection = document.createElement("div")
           btn_selection.classList.add("button-selection")
           btn_selection.innerHTML = `
-                        <div class="watch" onclick="PlayVideo('${chosen_card.show_id}');">
-                            <h3>Play</h3>
-                            <svg fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z" />
-                            </svg>
-                        </div>
-                        <div class="queue" onclick="ToggleWatchLater('${chosen_card.title}');">
-                            <h3>Watch Later</h3>
-                            <svg fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-                            </svg>
-                        </div>`
+            <div class="watch" onclick="PlayVideo('${chosen_card.show_id}');">
+              <h3>Play</h3>
+              <svg fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z" />
+              </svg>
+            </div>
+
+            <div class="queue" onclick="ToggleWatchLater('${chosen_card.title}');">
+              <h3>Assistir mais tarde</h3>
+              <svg fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg>
+            </div>
+          `
 
           top_info.append(title, btn_selection)
 
@@ -568,20 +599,21 @@ const AddBrowseSearchCards = ({ cards, itemsPerLine }) => {
           let btn_selection = document.createElement("div")
           btn_selection.classList.add("button-selection")
           btn_selection.innerHTML = `
-                        <div class="watch" onclick="PlayVideo('${chosen_card.show_id}');">
-                            <h3>Play</h3>
-                            <svg fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z" />
-                            </svg>
-                        </div>
-                        <div class="queue" onclick="ToggleWatchLater('${chosen_card.title}');">
-                            <h3>Watch Later</h3>
-                            <svg fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-                            </svg>
-                        </div>`
+            <div class="watch" onclick="PlayVideo('${chosen_card.show_id}');">
+              <h3>Play</h3>
+              <svg fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z" />
+              </svg>
+            </div>
+            <div class="queue" onclick="ToggleWatchLater('${chosen_card.title}');">
+              <h3>Assistir mais tarde</h3>
+              <svg fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg>
+            </div>
+          `
 
           top_info.append(title, btn_selection)
 
@@ -789,10 +821,7 @@ const ToggleWatchLater = (movie = "", activate = true) => {
   }
 }
 
-const PlayVideo = (movieTitle) => {
-  const [rootPath] = window.location.href.split('/pages/')
-  window.location.href = `${rootPath}/pages/video-player?title=${movieTitle}`
-}
+const PlayVideo = (movieUrl) => { window.open(movieUrl, "_blank") }
 
 const Initialize = () => {
   AddCarouselButtons()

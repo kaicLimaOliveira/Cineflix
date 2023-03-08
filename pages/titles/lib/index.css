@@ -845,7 +845,7 @@ a {
     /* faz ficar em cima dos elementos */    
     position: fixed;    
     /* fica à frente dos elementos */  
-    z-index: 11;
+    z-index: 20;
 }
 
 /* END MODAL */

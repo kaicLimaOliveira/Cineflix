@@ -2,7 +2,7 @@ export default class Controller {
   #view
   #camera
   #worker
-  #blickCounter = 0
+  #blinkCounter = 0
 
   constructor({ view, worker, camera }) {
     this.#view = view
@@ -29,7 +29,7 @@ export default class Controller {
       }
 
       const blinked = data.blinked
-      this.#blickCounter += blinked
+      this.#blinkCounter += blinked
       this.#view.togglePlayVideo()
       console.log('blinked', blinked);
     }
@@ -56,13 +56,13 @@ export default class Controller {
   }
 
   log(text) {
-    const times = `      - blinked times: ${this.#blinkCounter}`
+    const times = `      - blinked times: ${this.#blinkCounter}`;
     this.#view.log(`status: ${text}`.concat(this.#blinkCounter ? times : ""))
   }
 
   onBtnStart() {
     this.log('initializing detection...')
-    this.#blickCounter = 0
+    this.#blinkCounter = 0
     this.loop()
   }
 }
